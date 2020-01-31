@@ -1,24 +1,8 @@
 .App {
   text-align: center;
+  visibility: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-  opacity: 0;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    /* animation: App-logo-spin infinite 20s linear; */
-  }
-}
-p {
-  opacity: 0;
-}
-a {
-  opacity: 0;
-}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -30,15 +14,21 @@ a {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.circle {
+  width: 75px;
+  height: 75px;
+  border-radius: 100%;
+  margin: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.circle.yellow {
+  background-color: rgb(223, 248, 131);
+}
+
+.circle.maroon {
+  background-color: rgb(156, 24, 24);
+}
+
+.circle.blueviolet {
+  background-color: rgb(133, 60, 201);
 }
